@@ -7,3 +7,7 @@
 
 02 CStaticText  实现点击按钮，查看静态文本，点击另外一个按钮 修改静态文本
 原视频：第12课 https://www.bilibili.com/video/BV1JW41147NX?p=12
+
+
+05 ListCtrl  表格的用法 显示表格。这个还没有涉及到如何修改表格
+原视频：第16课 https://www.bilibili.com/video/BV1JW41147NX?p=16
