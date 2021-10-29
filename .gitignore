@@ -1,0 +1,54 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@grb2015 
+grb2015
+/
+java0710
+Private
+1
+0
+0
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Settings
+java0710/.gitignore 
+Newer           Older
+ 100644  25 lines (20 sloc)  291 Bytes
+# Compiled class file
+*.class
+target
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.iml
+.idea
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+/**/Debug
+.vs
