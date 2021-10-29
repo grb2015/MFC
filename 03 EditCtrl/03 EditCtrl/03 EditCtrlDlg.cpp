@@ -176,3 +176,11 @@ void CMy03EditCtrlDlg::OnBnClickedButton2()
 	///exit(0);	/// 这个是退出程序，我们应该是退出当前对话框
 	CDialog::OnCancel();
 }
+
+/// 第一个编辑框的enter键处理函数   找到类视图->重写按钮->onOK()重写
+void CMy03EditCtrlDlg::OnOK()
+{
+	// TODO: 在此添加专用代码和/或调用基类
+
+	CDialogEx::OnOK();/// 必须注释掉这行，不让编辑框按enter整个对话框接结束了
+}
