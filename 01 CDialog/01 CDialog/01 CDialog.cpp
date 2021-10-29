@@ -50,7 +50,7 @@ BOOL CMy01CDialogApp::InitInstance()
 	InitCtrls.dwICC = ICC_WIN95_CLASSES;
 	InitCommonControlsEx(&InitCtrls);
 
-	CWinApp::InitInstance();
+	CWinApp::InitInstance();				/// 这里是调用了CWinApp基类的InitInstance函数
 
 
 	AfxEnableControlContainer();
@@ -73,7 +73,7 @@ BOOL CMy01CDialogApp::InitInstance()
 
 	CMy01CDialogDlg dlg;
 	m_pMainWnd = &dlg;
-	INT_PTR nResponse = dlg.DoModal();
+	INT_PTR nResponse = dlg.DoModal();		/// 这里调用了显示对话框的函数
 	if (nResponse == IDOK)
 	{
 		// TODO: 在此放置处理何时用

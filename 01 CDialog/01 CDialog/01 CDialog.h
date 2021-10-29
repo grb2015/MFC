@@ -18,15 +18,15 @@
 class CMy01CDialogApp : public CWinApp
 {
 public:
-	CMy01CDialogApp();
+	CMy01CDialogApp();					/// 构造函数
 
 // 重写
 public:
-	virtual BOOL InitInstance();
+	virtual BOOL InitInstance();		/// 初始化函数
 
 // 实现
 
 	DECLARE_MESSAGE_MAP()
 };
 
-extern CMy01CDialogApp theApp;
+extern CMy01CDialogApp theApp;			/// 定义的类示例

@@ -32,5 +32,5 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
-	afx_msg void OnBnClickedButton1();
+	afx_msg void OnBnClickedButton1();				/// 这里是我添加的按钮点击的函数
 };
