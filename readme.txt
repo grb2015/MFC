@@ -9,5 +9,9 @@
 原视频：第12课 https://www.bilibili.com/video/BV1JW41147NX?p=12
 
 
+
+03 EditCtrl 编辑框的用法 ： ·编辑框的变量绑定  变量赋值等
+原视频：第13课 https://www.bilibili.com/video/BV1JW41147NX?p=13
+
 05 ListCtrl  表格的用法 显示表格。这个还没有涉及到如何修改表格
 原视频：第16课 https://www.bilibili.com/video/BV1JW41147NX?p=16
