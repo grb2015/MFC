@@ -36,4 +36,5 @@ public:
 	CEdit m_editor2;
 	afx_msg void OnBnClickedButton1();
 	afx_msg void OnBnClickedButton2();
+	virtual void OnOK();
 };
