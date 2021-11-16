@@ -59,12 +59,14 @@ CMy07selectDlg::CMy07selectDlg(CWnd* pParent /*=nullptr*/)
 void CMy07selectDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_COMBO1, m_cbx);
 }
 
 BEGIN_MESSAGE_MAP(CMy07selectDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_CBN_SELCHANGE(IDC_COMBO1, &CMy07selectDlg::OnCbnSelchangeCombo1)
 END_MESSAGE_MAP()
 
 
@@ -98,7 +100,18 @@ BOOL CMy07selectDlg::OnInitDialog()
 	//  执行此操作
 	SetIcon(m_hIcon, TRUE);			// 设置大图标
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
-
+	m_cbx.AddString(TEXT("可乐"));
+	m_cbx.AddString(TEXT("雪碧"));
+	m_cbx.AddString(TEXT("美年达"));
+	/// 设置下拉框默认值
+	m_cbx.SetCurSel(0);
+	/// 插入
+	m_cbx.InsertString(3, TEXT("娃哈哈"));
+	/// 删除
+	m_cbx.DeleteString(1);
+	/// 获取值
+	CString str;
+	m_cbx.GetLBText(1, str);
 	// TODO: 在此添加额外的初始化代码
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
@@ -153,3 +166,15 @@ HCURSOR CMy07selectDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+/// 下拉框修改后触发的事件
+void CMy07selectDlg::OnCbnSelchangeCombo1()
+{
+	// TODO: 在此添加控件通知处理程序代码
+
+	/// 拿到索引位置
+	int index = m_cbx.GetCurSel();
+	CString str;
+	m_cbx.GetLBText(index,str);
+	MessageBox(str);
+}
