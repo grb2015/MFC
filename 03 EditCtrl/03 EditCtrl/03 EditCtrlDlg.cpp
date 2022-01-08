@@ -74,9 +74,7 @@ END_MESSAGE_MAP()
 
 // CMy03EditCtrlDlg 消息处理程序
 
-BOOL CMy03EditCtrlDlg::
-
-()
+BOOL CMy03EditCtrlDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
